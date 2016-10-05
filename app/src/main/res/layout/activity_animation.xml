@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.orangecoastcollege.cs273.rorellana2.northernlightsanimation.AnimationActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lightsImageView"
+        android:layout_weight="1"
+        android:elevation="1dp"
+        android:background="@drawable/lights1"
+        android:contentDescription="lights_image_view_text" />
+
+    <Button
+        android:text="FRAME ANIMATION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameAnimButton"
+        android:layout_weight=".1"
+        android:onClick="toggleFrameAnim" />
+
+    <Button
+        android:text="ROTATE ANIMATION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rotateAnimButton"
+        android:onClick="toggleRotateAnim"
+        android:layout_weight=".1" />
+
+    <Button
+        android:text="SHAKE ANIMATION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shakeAnimButton"
+        android:layout_weight=".1"
+        android:onClick="toggleShakeAnim" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cutomAnimButton"
+        android:text="CUSTOM ANIMATION"
+        android:layout_weight=".1"
+        android:onClick="toggleCustomAnim" />
+</LinearLayout>
